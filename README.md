@@ -29,9 +29,25 @@ dnf -y install bc
 ```
 ### 테스트 단계
 fs-test.sh는 크게 3단계로 동작합니다.
-
 |단계|내용|
 |---|---|
 |Phase1|Sequential Write Scale-Up: writer job 수를 늘리면서 최대 쓰기 성능 확인|
 |Phase2|Sequential Read Scale-Up: reader job 수를 늘리면서 최대 읽기 성능 확인|
 |Phase3|Full Duplex: reader는 고정하고 writer를 늘리면서 읽기 성능 저하 여부 확인|
+
+fs-test.sh는 fio_logs_fs_<timestamp>/ 로그 디렉터리와 임시 fio_test_<timestamp>/ 테스트 파일을 생성합니다. 
+
+### 출력 예시
+Phase 1 - Sequential Write Scale-Up
+  Peak Performance
+  Optimal Jobs
+
+Phase 2 - Sequential Read Scale-Up
+  Peak Performance
+  Optimal Jobs
+
+Phase 3 - Full Duplex
+  Maximum Write Jobs
+  Write Performance
+  Total Read Performance
+  Minimum Read per Job

@@ -55,7 +55,7 @@ fs-test.sh는 fio_logs_fs_<timestamp>/ 로그 디렉터리와 임시 fio_test_<t
 |O_DIRECT|기본 비활성화|
 
 주의할 점은 공간이 꽤 필요합니다. 실행 예시에 따라 10G × max_jobs × test phases 수준의 충분한 공간을 필요로 할 수 있습니다.
-<br/>
+<br/><br/>
 
 ### 결과 확인
 실행 후 아래 형태의 로그 디렉터리가 생성됩니다.

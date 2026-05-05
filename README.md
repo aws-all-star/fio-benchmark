@@ -30,6 +30,7 @@ dnf -y install bc
 ### 테스트 단계
 fs-test.sh는 크게 3단계로 동작합니다.
 |단계|내용|
+--
 |Phase1|Sequential Write Scale-Up: writer job 수를 늘리면서 최대 쓰기 성능 확인|
 |Phase2|Sequential Read Scale-Up: reader job 수를 늘리면서 최대 읽기 성능 확인|
 |Phase3|Full Duplex: reader는 고정하고 writer를 늘리면서 읽기 성능 저하 여부 확인|

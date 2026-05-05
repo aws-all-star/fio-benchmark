@@ -27,6 +27,12 @@ dnf -y install bc
 ```sh
 ./fs-test.sh <디렉토리 명> <수행 시간(초)> <reader_jobs>
 ```
+예시
+```sh
+./fs-test.sh /testfs 30 8
+```
+<br/>
+
 ### 테스트 단계
 fs-test.sh는 크게 3단계로 동작합니다.
 |단계|내용|
@@ -36,18 +42,24 @@ fs-test.sh는 크게 3단계로 동작합니다.
 |Phase3|Full Duplex: reader는 고정하고 writer를 늘리면서 읽기 성능 저하 여부 확인|
 
 fs-test.sh는 fio_logs_fs_<timestamp>/ 로그 디렉터리와 임시 fio_test_<timestamp>/ 테스트 파일을 생성합니다. 
+<br/>
 
-### 출력 예시
-Phase 1 - Sequential Write Scale-Up
-  Peak Performance
-  Optimal Jobs
+### 주요 기본값
+|항목|기본값|
+|---|---|
+|Block size|1M|
+|ioengine|libaio|
+|iodepth|32|
+|파일 크기|job당 10G|
+|job 범위|4~32|
+|O_DIRECT|기본 비활성화|
 
-Phase 2 - Sequential Read Scale-Up
-  Peak Performance
-  Optimal Jobs
+주의할 점은 공간이 꽤 필요합니다. 실행 예시에 따라 10G × max_jobs × test phases 수준의 충분한 공간을 필요로 할 수 있습니다.
+<br/>
 
-Phase 3 - Full Duplex
-  Maximum Write Jobs
-  Write Performance
-  Total Read Performance
-  Minimum Read per Job
+### 결과 확인
+실행 후 아래 형태의 로그 디렉터리가 생성됩니다.
+```sh
+ls -ltr
+ls fio_logs_fs_*
+```

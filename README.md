@@ -37,10 +37,7 @@ dnf -y install bc
 ```
 예시
 ```sh
-./fs-test.sh /testfs 30 8
-```
-```sh
-# tail -f fs-test-xfs.out
+# ./fs-test.sh /testfs 30 8
 ==========================================
 Test Directory: /xfs
 Test Duration: 30s per test

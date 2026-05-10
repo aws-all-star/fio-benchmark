@@ -35,7 +35,7 @@ dnf -y install bc
 ```sh
 ./fs-test.sh <디렉토리 명> <수행 시간(초)> <reader_jobs>
 ```
-예시
+**예시**
 ```sh
 # ./fs-test.sh /testfs 30 8
 ==========================================

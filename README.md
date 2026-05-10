@@ -39,6 +39,48 @@ dnf -y install bc
 ```sh
 ./fs-test.sh /testfs 30 8
 ```
+```sh
+# tail -f fs-test-xfs.out
+==========================================
+Test Directory: /xfs
+Test Duration: 30s per test
+Test Date: 20260510T104545
+
+Phase 1: Sequential Write Scale-Up
+------------------------------------
+[Phase 1] Testing write baseline: jobs=1
+[Phase 1] Baseline: 82 MiB/s
+[Phase 1] Testing write: jobs=4
+[Phase 1] Testing write: jobs=5
+[Phase 1] Testing write: jobs=6
+[Phase 1] Testing write: jobs=7
+[Phase 1] Testing write: jobs=8
+[Phase 1] Testing write: jobs=9
+[Phase 1] Testing write: jobs=10
+[Phase 1] Testing write: jobs=11
+[Phase 1] Testing write: jobs=12
+[Phase 1] Testing write: jobs=13
+[Phase 1] Testing write: jobs=14
+[Phase 1] Testing write: jobs=15
+[Phase 1] Testing write: jobs=16
+[Phase 1] Testing write: jobs=17
+[Phase 1] Testing write: jobs=18
+[Phase 1] Testing write: jobs=19
+[Phase 1] Testing write: jobs=20
+[Phase 1] Testing write: jobs=21
+[Phase 1] Testing write: jobs=22
+[Phase 1] Testing write: jobs=23
+[Phase 1] Testing write: jobs=24
+[Phase 1] Testing write: jobs=25
+[Phase 1] Testing write: jobs=26
+[Phase 1] Testing write: jobs=27
+[Phase 1] Testing write: jobs=28
+[Phase 1] Testing write: jobs=29
+[Phase 1] Testing write: jobs=30
+[Phase 1] Testing write: jobs=31
+[Phase 1] Testing write: jobs=32
+[Phase 1] Complete: Peak 1111 MiB/s with 15 jobs
+```
 <br/><br/>
 
 ## 테스트 단계

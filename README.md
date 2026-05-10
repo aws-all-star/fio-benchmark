@@ -1,13 +1,13 @@
 # fio benchmark Tool (IO 성능테스트 도구)
-FIO(Flexible I/O Tester)를 활용한 포괄적인 성능 테스트 툴킷으로, 여러 스레드(Theard) 또는 프로세스(Process)를 생성하여 작업을 수행하여 블록 장치와 파일 시스템을 벤치마킹합니다. 이 스크립트는 순차적인 읽기/쓰기 성능을 테스트하고, 최적의 워크로드 구성을 찾으며, 전체 이중 성능 분석을 수행하기 위한 자동화 스크립트를 포함합니다.<br/>
+**FIO(Flexible I/O Tester)를 활용한 포괄적인 성능 테스트 툴킷**으로, 여러 스레드(Theard) 또는 프로세스(Process)를 생성하여 작업을 수행하여 블록 장치와 파일 시스템을 벤치마킹합니다. 이 스크립트는 **순차적인 읽기/쓰기 성능을 테스트하고, 최적의 워크로드 구성을 찾으며, 전체 이중 성능 분석을 수행하기 위한 자동화 스크립트**를 포함합니다.<br/>
 https://github.com/axboe/fio
 <br/><br/>
 
 # 적용 대상
-대대수 Linux OS 에서 동작 가능하며, 대표적으로 Red Hat 계열에서 동작 테스트를 진행하였습니다.
+대대수 Linux OS 에서 동작 가능하며, 대표적으로 Red Hat 계열에서 동작 테스트를 진행을 완료하였습니다.
 - Red Hat Enterprise Linux 8 이상
-- Rocky Linux 를 포함한 Oracle Linux, OpenSUSE 등
-- Ubuntu 22.04 LTS 이상
+- Rocky Linux 8 를 포함한 Oracle Linux 8, OpenSUSE 등
+- Ubuntu 22.04 LTS 이상 지원
 <br/><br/>
 
 ## 개요(Overview)

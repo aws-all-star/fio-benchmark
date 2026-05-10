@@ -31,7 +31,7 @@ dnf -y install bc
 ## fs-test.sh - 파일시스템 성능 테스트
 포괄적인 3단계 파일 시스템 성능 테스트를 실행하여 최대 처리량과 최적의 워크로드 구성을 식별합니다.
 
-### 사용 방법
+## 사용 방법
 ```sh
 ./fs-test.sh <디렉토리 명> <수행 시간(초)> <reader_jobs>
 ```
@@ -41,7 +41,7 @@ dnf -y install bc
 ```
 <br/><br/>
 
-### 테스트 단계
+## 테스트 단계
 fs-test.sh는 크게 3단계로 동작합니다.
 |단계|내용|
 |---|---|
@@ -52,7 +52,7 @@ fs-test.sh는 크게 3단계로 동작합니다.
 fs-test.sh는 fio_logs_fs_<timestamp>/ 로그 디렉터리와 임시 fio_test_<timestamp>/ 테스트 파일을 생성합니다. 
 <br/><br/>
 
-### 주요 기본값
+## 주요 기본값
 |항목|기본값|
 |---|---|
 |Block size|1M|

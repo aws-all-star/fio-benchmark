@@ -1,4 +1,7 @@
 #!/bin/bash
+# Created by Donghyun Kim
+# KT DS DX Tech Team
+#
 # Usage: ./fs-test.sh <test_directory> <duration> <reader_jobs>
 #
 # Runs a 3-phase filesystem performance test:

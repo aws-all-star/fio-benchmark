@@ -62,7 +62,7 @@ fs-test.sh는 fio_logs_fs_<timestamp>/ 로그 디렉터리와 임시 fio_test_<t
 |job 범위|4~32|
 |O_DIRECT|기본 비활성화|
 
-주의할 점은 공간이 꽤 필요합니다. 실행 예시에 따라 10G × max_jobs × test phases 수준의 충분한 공간을 필요로 할 수 있습니다.
+주의할 점은 공간이 꽤 필요합니다. 실행 예시에 따라 10G × max_jobs × test phases 수준의 충분한 공간을 필요로 할 수 있습니다. <br/>
 현재 원본 기준 FILE_SIZE=10G, MAX_JOBS=32라면 read 준비파일만 최대 320GB가 필요하므로 테스트 환경에 따라 해당 값을 변경하는 것을 추천합니다.
 <br/><br/>
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 # Created by Donghyun Kim
-# KT DS DX Tech Team
+# Date: 09 MAY 2026
+# KT DS DX Tech Team, Infra Architecture(Meister)
 #
 # Usage: ./fs-test.sh <test_directory> <duration> <reader_jobs>
 #

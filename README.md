@@ -36,9 +36,9 @@ dnf -y install bc
 ```
 **예시**
 ```sh
-# ./fs-test.sh /testfs 30 8
+# ./fs-test.sh /data 30 8
 ==========================================
-Test Directory: /xfs
+Test Directory: /data
 Test Duration: 30s per test
 Test Date: 20260510T104545
 
